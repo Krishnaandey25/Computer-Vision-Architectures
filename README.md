@@ -1,39 +1,35 @@
-# Computer Vision Architectures
+# Computer Vision Architectures: Real-time Perception & Segmentation
 
-![OpenCV](https://img.shields.io/badge/OpenCV-4.x-brightgreen.svg)
-![PyTorch](https://img.shields.io/badge/PyTorch-Deep%20Learning-red.svg)
-![YOLO](https://img.shields.io/badge/YOLO-v8-orange.svg)
-![License](https://img.shields.io/badge/License-MIT-blue.svg)
+[![Standard](https://img.shields.io/badge/Standard-CTO--Ready-blue)](https://github.com/Krishnaandey25/Computer-Vision-Architectures)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
-High-performance computer vision architectures optimized for real-time inference and complex image analysis.
+Advanced Computer Vision models for object detection, facial recognition, and medical imaging built with 'CTO Standard' architectural patterns.
 
-## System Architecture
+## 🚀 Quick Start
 
-```mermaid
-graph LR
-    I[Input Stream] --> P[Preprocessing]
-    P --> CNN[Neural Network]
-    CNN --> OD[Object Detection]
-    CNN --> SEG[Segmentation]
-    OD --> R[Results Rendering]
-    SEG --> R
-```
+Ensure you have Python 3.9+ and run:
 
-## Business Impact
-- **Industrial Automation:** Increases quality control accuracy by 40% through automated defect detection.
-- **Enhanced Security:** Enables real-time surveillance monitoring with intelligent anomaly detection.
-- **Data Insights:** Extracts valuable metadata from visual sources for retail and urban planning.
+`ash
+make install
+`
 
-## Installation Guide
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Krishnaandey25/Computer-Vision-Architectures.git
-   ```
-2. Install requirements:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Run the vision engine:
-   ```bash
-   python src/main.py
-   ```
+To run a sample execution:
+`ash
+python src/main.py
+`
+
+## 🏗️ Architecture Decision Records (ADR)
+
+- **VisionModel (ABC):** Unified interface for all CV backends.
+- **ModelFactory:** Decouples model instantiation from runtime logic.
+- **VisionProcessor:** Orchestrates image preprocessing and model inference.
+
+## 🧪 Development
+
+- **Lint:** make lint
+- **Format:** make format
+- **Test:** make test
+
+## 🤝 Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
